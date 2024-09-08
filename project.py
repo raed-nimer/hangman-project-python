@@ -42,3 +42,6 @@ while is_game_over == False:
             is_game_over = True 
             print("You died!")     
     
+    if '_' not in display:
+        is_game_over = True 
+        print("You won!")
