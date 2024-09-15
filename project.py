@@ -1,4 +1,4 @@
-import random 
+import random
 # Adding words that are going to be checked
 
 easy_words = ['ALBANIA', 'ALGERIA', 'ANDORRA', 'ANGOLA', 'ARMENIA',
@@ -108,10 +108,8 @@ stages = [ r'''
 # Pick a random word
 chosen_word = random.choice(words_list) 
 
-
-
 # lives of the character
-lives = 5
+lives = 6
 
 is_game_over = False
 
