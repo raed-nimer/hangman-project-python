@@ -1,5 +1,10 @@
+import pyfiglet
+from colored import fg, attr
 import random
+import os
+import time
 # Adding words that are going to be checked
+
 
 easy_words = ['ALBANIA', 'ALGERIA', 'ANDORRA', 'ANGOLA', 'ARMENIA',
  'AUSTRIA', 'BAHAMAS', 'BAHRAIN', 'BELARUS', 'BELGIUM', 'BELIZE', 'BENIN', 'BHUTAN',
@@ -27,7 +32,41 @@ hard_words = ['ANTIGUA-AND-BARBUDA', 'BOSNIA-AND-HERZEGOVINA', 'BURKINA-FASO', '
 'CZECH-REPUBLIC', 'DOMINICAN-REPUBLIC', 'EAST-TIMOR', 'EL-SALVADOR', 'MARSHALL-ISLANDS', 'MAURITANIA', 'MAURITIUS',
  'NEW-ZEALAND', 'NORTH-MACEDONIA', 'NORTH-KOREA', 'PAPUA-NEW-GUINEA', 'SOUTH-AFRICA', 'SOUTH-KOREA', 'SOUTH-SUDAN', 
  'UNITED-KINGDOM', 'VATICAN-CITY']
-print("\t!\tWELCOME TO HANGMAN\t!\n")
+
+def clear_screen(): 
+  # Check the operating system and clear the screen accordingly 
+  if os.name == 'nt': 
+    # For Windows 
+    os.system('cls') 
+  else: # For macOS and Linux 
+    os.system('clear')
+
+# colored variables
+OR = fg("orange_3") # Orange
+CY = fg("cyan") # Cyan 
+MG = fg("magenta") # Magenta 
+PK = fg("pink_1") # Pink 
+SB = fg("sky_blue_1") # Sky Blue 
+# LV = fg("lavender_blush_1") # Lavender 
+# DG = fg("dark_sea_green_4") # Dark Sea Green 
+# BR = fg("brown_4") # Brown 
+# DB = fg("deep_sky_blue_4") # Deep Sky Blue
+GR = fg("dark_olive_green_2") 
+RD = fg("light_red") 
+GD = fg("gold_3a") 
+YL = fg("light_yellow")
+R = attr("reset")
+
+INITIAL_BANNER = SB + pyfiglet.figlet_format(
+    "Welcome to hangman!", font="rectangles", justify="center"
+    ) + R 
+SUCCESS_MESSAGE = GR + pyfiglet.figlet_format(
+    "YOU WON!", font="rectangles", justify="center"
+    ) + R 
+LOSE_MESSAGE = RD + pyfiglet.figlet_format(
+    "YOU LOST!", font="rectangles", justify="center"
+    ) + R 
+print(INITIAL_BANNER)
 print("CHOOSE DIFFICULTY:")
 print("1: EASY\n2: MEDIUM\n3: HARD\n")
 
@@ -39,7 +78,13 @@ elif difficulty_level == 2:
 elif difficulty_level == 3:
     words_list = hard_words    
 
+# Adding two seconds delay 
+time.sleep(2)    
+# Call the function to clear the screen 
+clear_screen()
+
 # Different stages
+
 stages = [ r''' 
     +---+
     |   |
@@ -126,7 +171,7 @@ print(display)
 
 # Accepting input from user
 while is_game_over is False:
-    print(stages[lives])
+    print( GD + stages[lives] + R)
     user_input = str(input("Guess a letter:")).upper()  # user_input = 'S'
     # validating user_input
     if not user_input.isalpha():
@@ -147,10 +192,13 @@ while is_game_over is False:
         if lives == 0: 
             # User lost 
             is_game_over = True 
-            print(stages[lives])
-            print("You died!")     
+            time.sleep(2)
+            clear_screen()
+            print(LOSE_MESSAGE)   
             print("Country name was: " + chosen_word)
 
     if ' ' not in display:
         is_game_over = True 
-        print("You won!")
+        time.sleep(2)
+        clear_screen()
+        print(SUCCESS_MESSAGE)
