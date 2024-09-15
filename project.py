@@ -27,6 +27,18 @@ hard_words = ['ANTIGUA-AND-BARBUDA', 'BOSNIA-AND-HERZEGOVINA', 'BURKINA-FASO', '
 'CZECH-REPUBLIC', 'DOMINICAN-REPUBLIC', 'EAST-TIMOR', 'EL-SALVADOR', 'MARSHALL-ISLANDS', 'MAURITANIA', 'MAURITIUS',
  'NEW-ZEALAND', 'NORTH-MACEDONIA', 'NORTH-KOREA', 'PAPUA-NEW-GUINEA', 'SOUTH-AFRICA', 'SOUTH-KOREA', 'SOUTH-SUDAN', 
  'UNITED-KINGDOM', 'VATICAN-CITY']
+print("\t!\tWELCOME TO HANGMAN\t!\n")
+print("CHOOSE DIFFICULTY:")
+print("1: EASY\n2: MEDIUM\n3: HARD\n")
+
+difficulty_level = int(input("ENTER CHOICE:"))
+if difficulty_level == 1: 
+    words_list = easy_words
+elif difficulty_level == 2:
+    words_list = medium_words
+elif difficulty_level == 3:
+    words_list = hard_words    
+
 # Different stages
 stages = ['''
     +---+
