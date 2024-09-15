@@ -115,11 +115,13 @@ lives = 5
 
 is_game_over = False
 
-#chosen = SWEDEN
-display = [] # []
-# Show letter block 
-for i in range(len(chosen_word)): #0 - 5
-    display += "_" 
+display = []
+# Show letter block
+for i in range(len(chosen_word)):  # 0 - 5
+    if chosen_word[i] == "-":
+        display += "-" 
+    else: 
+        display += " "
 
 
 print(display)
