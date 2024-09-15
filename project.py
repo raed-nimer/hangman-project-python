@@ -127,30 +127,32 @@ for i in range(len(chosen_word)):  # 0 - 5
 print(display)
 
 # Accepting input from user
-while is_game_over == False:
-    user_input = str(input("Guess a letter:")).upper() #user_input = 'S'
+while is_game_over is False:
+    print(stages[lives])
+    user_input = str(input("Guess a letter:")).upper()  # user_input = 'S'
     # validating user_input
     if not user_input.isalpha():
         print("Only letters allowed")
         continue
 
-    for position in range(len(chosen_word)): # 0 - 5
+    for position in range(len(chosen_word)):  # 0 - 5
         letter = chosen_word[position] 
         if user_input == letter:
             display[position] = letter
 
     print(display)
-  
+
     # If letter does not exist in the chosen word 
     if user_input not in chosen_word:
-        #decrease a life 
-        lives -= 1
+        lives -= 1  # decrease a life 
         print("Oops! wrong guess. " + str(lives) + " Lives left")
         if lives == 0: 
             # User lost 
             is_game_over = True 
+            print(stages[lives])
             print("You died!")     
-    
-    if '_' not in display:
+            print("Country name was: " + chosen_word)
+
+    if ' ' not in display:
         is_game_over = True 
         print("You won!")
