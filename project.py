@@ -70,7 +70,7 @@ print(INITIAL_BANNER)
 print("CHOOSE DIFFICULTY:")
 print("1: EASY\n2: MEDIUM\n3: HARD\n")
 
-difficulty_level = int(input("ENTER CHOICE:"))
+difficulty_level = int(input("ENTER CHOICE:\n"))
 if difficulty_level == 1: 
     words_list = easy_words
 elif difficulty_level == 2:
@@ -172,7 +172,7 @@ print(display)
 # Accepting input from user
 while is_game_over is False:
     print( GD + stages[lives] + R)
-    user_input = str(input("Guess a letter:")).upper()  # user_input = 'S'
+    user_input = str(input("Guess a letter: \n")).upper()  # user_input = 'S'
     # validating user_input
     if not user_input.isalpha():
         print("Only letters allowed")
