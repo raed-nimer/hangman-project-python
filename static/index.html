@@ -2,16 +2,20 @@
 <html>
 
 <head>
-     <link rel="stylesheet" href="xterm.css" /> 
+     <link rel="stylesheet" href="styles.css" /> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"
         integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ=="
         crossorigin="anonymous"></script>
-     <script src="xterm.js"></script> 
-    <title>Python Terminal by Code Institute</title>
+     <script src="script.js"></script> 
+    <title>Hangman Game</title>
 </head>
 
 <body>
-    <button onclick="window.location.reload()">Run Program</button>
+    
+    <div class="d-flex">
+        <button class="script-btn" onclick="window.location.reload()">Run Program</button>
+    </div>
+
     <div id="terminal"></div>
     <script>
         var socket = null;
