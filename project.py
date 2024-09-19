@@ -6,6 +6,7 @@ import time
 # Adding words that are going to be checked
 
 
+
 easy_words = ['ALBANIA', 'ALGERIA', 'ANDORRA', 'ANGOLA', 'ARMENIA',
  'AUSTRIA', 'BAHAMAS', 'BAHRAIN', 'BELARUS', 'BELGIUM', 'BELIZE', 'BENIN', 'BHUTAN',
   'BOLIVIA', 'BOTSWANA', 'BRAZIL', 'BRUNEI', 'CANADA', 
@@ -58,13 +59,13 @@ YL = fg("light_yellow")
 R = attr("reset")
 
 INITIAL_BANNER = SB + pyfiglet.figlet_format(
-    "Welcome to hangman!", font="rectangles", justify="center"
+    "Welcome to hangman!", font="big", justify="center"
     ) + R 
 SUCCESS_MESSAGE = GR + pyfiglet.figlet_format(
-    "YOU WON!", font="rectangles", justify="center"
+    "YOU WON!", font="big", justify="center"
     ) + R 
 LOSE_MESSAGE = RD + pyfiglet.figlet_format(
-    "YOU LOST!", font="rectangles", justify="center"
+    "YOU LOST!", font="big", justify="center"
     ) + R 
 print(INITIAL_BANNER)
 print("CHOOSE DIFFICULTY:")
