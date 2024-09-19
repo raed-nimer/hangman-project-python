@@ -8,6 +8,7 @@
 
 .d-flex {
   display: flex;
+  justify-content: center;
 }
 
 .xterm.focus,
@@ -46,7 +47,6 @@
   display: block;
 }
 .xterm .xterm-viewport {
-  
   background-color: #000;
   overflow-y: scroll;
   cursor: default;
@@ -116,9 +116,9 @@
   width: 200px;
   height: 35px;
   background-color: #1075e8;
-  border: 1px solid 1075e8;
+  border: 1px solid #1075e8;
   color: white;
   text-transform: uppercase;
   margin: 10px;
-  border-radius: 8px;
+  border-radius: 3px;
 }
