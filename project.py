@@ -59,7 +59,7 @@ YL = fg("light_yellow")
 R = attr("reset")
 
 INITIAL_BANNER = SB + pyfiglet.figlet_format(
-    "Welcome to hangman!", font="big", justify="center"
+    "HANGMAN!", font="big", justify="center"
     ) + R 
 SUCCESS_MESSAGE = GR + pyfiglet.figlet_format(
     "YOU WON!", font="big", justify="center"
