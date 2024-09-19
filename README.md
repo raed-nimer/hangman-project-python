@@ -65,6 +65,7 @@ The game is deployed on Code Institute mock terminal on Heroku. The live app can
 ### Success
 
 When the user guesses the word correctly within the available attempts, the user wins the game.
+
 ![Success](static/assets/images/Success.png)
 
 ### Failure
@@ -81,6 +82,12 @@ When the user guesses the word correctly within the available attempts, the user
 ## Testing
 
 This app was developed on a macbook air desktop running mac OS. Testing was performed both locally and when deployed to Heroku. The program was tested using different inputs and scenarios. Everything worked correctly and as expected.
+
+### PEP8 Code Institute Python Linter Testing
+
+- the only issue is the spaces in the hangman stages section, which cannot be avoided as they must remain in their current positions.
+
+  ![PEP8 Linter](static/assets/images/CI-Python-Linter.png)
 
 ### Lighthouse testing
 
@@ -114,3 +121,12 @@ This app was developed on a macbook air desktop running mac OS. Testing was perf
 - [tutorialspoint](https://www.tutorialspoint.com/index.htm)
 
 ## Credits
+
+### Acknowledgements
+
+- [Code Institute](https://codeinstitute.net/ie/) Love Sandwiches and python content.
+- [Slack community](https://slack.com/intl/en-ie/) for emotional support.
+
+### Youtube channels that was in great help for my projcet are:
+
+- [Programming with Mosh](https://www.youtube.com/@programmingwithmosh) great python explanation.
