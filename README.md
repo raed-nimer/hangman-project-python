@@ -127,6 +127,6 @@ This app was developed on a macbook air desktop running mac OS. Testing was perf
 - [Code Institute](https://codeinstitute.net/ie/) Love Sandwiches and python content.
 - [Slack community](https://slack.com/intl/en-ie/) for emotional support.
 
-### Youtube channels that was in great help for my projcet are:
+### Youtube channels that was in great help for my project are:
 
 - [Programming with Mosh](https://www.youtube.com/@programmingwithmosh) great python explanation.
