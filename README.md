@@ -85,7 +85,7 @@ This app was developed on a macbook air desktop running mac OS. Testing was perf
 
 ### PEP8 Code Institute Python Linter Testing
 
-- the only issue is the spaces in the hangman stages section, which cannot be avoided as they must remain in their current positions.
+- All errors were fixed.
 
   ![PEP8 Linter](static/assets/images/CI-Python-Linter.png)
 
