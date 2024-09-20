@@ -54,7 +54,7 @@ The game is deployed on Code Institute mock terminal on Heroku. The live app can
 
 ### Difficulty level - Hard
 
-- When the user chooses easy as the difficulty level, the game starts.
+- When the user chooses hard as the difficulty level, the game starts.
 
 ![Hard](static/assets/images/Hard-1.png)
 
