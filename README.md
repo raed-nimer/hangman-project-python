@@ -64,7 +64,7 @@ The game is deployed on Code Institute mock terminal on Heroku. The live app can
 
 ### Success
 
-When the user guesses the word correctly within the available attempts, the user wins the game.
+- When the user guesses the word correctly within the available attempts, the user wins the game.
 
 ![Success](static/assets/images/Success.png)
 
